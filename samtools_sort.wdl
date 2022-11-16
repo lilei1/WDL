@@ -17,6 +17,8 @@ task sort {
    }
     runtime {
         docker : container
+        cpu: 1
+        memory: "5G"
         }
    output {
         File outsam=filename_sam
